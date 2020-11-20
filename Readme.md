@@ -171,5 +171,5 @@ Kode diatas digunakan untuk mengecek apakah bucket overload atau tidak
                 }
             }
         }
-```
+````
 Sedangkan kode diatas untuk menghapus item pada list, namun function ini blm diimplementasikan dalam aplikasi ini

@@ -1,0 +1,33 @@
+﻿<Window x:Class="FreshFruit.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FreshFruit"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="587.603" Width="800">
+    <Grid>
+        <Label Content="Fruit Shop" HorizontalAlignment="Left" Margin="36,34,0,0" VerticalAlignment="Top" FontFamily="Agency FB" FontSize="36" FontWeight="Bold"/>
+        <Label Content="Let's get fresh fruit" HorizontalAlignment="Left" Margin="36,99,0,0" VerticalAlignment="Top" FontFamily="Agency FB" FontSize="18"/>
+        <GridSplitter HorizontalAlignment="Left" Height="700" Margin="390,-208,0,65" VerticalAlignment="Center" Width="5" RenderTransformOrigin="0.5,0.5" Background="#7F000000">
+            <GridSplitter.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </GridSplitter.RenderTransform>
+        </GridSplitter>
+        <Image HorizontalAlignment="Left" Height="100" Margin="36,187,0,0" VerticalAlignment="Top" Width="100" Source="anggur.jpg"/>
+        <Button x:Name="AddGrape" Content="Add" HorizontalAlignment="Left" Margin="36,304,0,0" VerticalAlignment="Top" Width="100" Click="AddGrape_Click" Height="28"/>
+        <Image HorizontalAlignment="Left" Height="100" Margin="177,187,0,0" VerticalAlignment="Top" Width="100" Source="apple.png"/>
+        <Button x:Name="AddApple" Content="Add" HorizontalAlignment="Left" Margin="177,304,0,0" VerticalAlignment="Top" Width="100" Click="AddApple_Click" Height="28"/>
+        <Image HorizontalAlignment="Left" Height="100" Margin="36,368,0,0" VerticalAlignment="Top" Width="100" Source="banana.jpg"/>
+        <Button x:Name="AddBanana" Content="Add" HorizontalAlignment="Left" Margin="36,485,0,-5" VerticalAlignment="Top" Width="100" Click="AddBanana_Click" Height="28"/>
+        <Image HorizontalAlignment="Left" Height="100" Margin="177,368,0,0" VerticalAlignment="Top" Width="100" Source="orange.png"/>
+        <Button x:Name="AddOrange" Content="Add" HorizontalAlignment="Left" Margin="177,485,0,-5" VerticalAlignment="Top" Width="100" Click="AddOrange_Click" Height="28"/>
+        <Label Content="Hi, it's your Buckets!" HorizontalAlignment="Left" Margin="358,187,0,0" VerticalAlignment="Top" FontFamily="Agency FB" FontSize="20" FontWeight="Bold" RenderTransformOrigin="0.361,0.3"/>
+        <ListBox x:Name="ListBoxBucket" HorizontalAlignment="Left" Height="263" Margin="358,250,0,0" VerticalAlignment="Top" Width="384"/>
+    </Grid>
+</Window>
